@@ -3,133 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mustafa | پۆرتفۆلیۆ</title>
+    <title>Mustafa Germavi | پۆرتفۆلیۆ</title>
+    
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <style>
         :root {
             --primary: #00d2ff;
             --bg: #0f172a;
             --card-bg: #1e293b;
             --text: #f8fafc;
+            --whatsapp: #25d366;
+            --instagram: #e1306c;
+            --facebook: #1877f2;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: 'Vazirmatn', sans-serif;
         }
 
         body {
-            font-family: 'Vazirmatn', sans-serif;
             background-color: var(--bg);
             color: var(--text);
             margin: 0;
-            padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
+            min-height: 100vh;
         }
 
-        header {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        .container {
+            width: 90%;
+            max-width: 600px;
             text-align: center;
+            padding: 50px 0;
         }
 
         .profile-img {
-            width: 150px;
-            height: 150px;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
-            border: 4px solid var(--primary);
+            border: 3px solid var(--primary);
             margin-bottom: 20px;
-            box-shadow: 0 0 20px rgba(0, 210, 255, 0.3);
+            object-fit: cover;
+            box-shadow: 0 0 20px rgba(0, 210, 255, 0.2);
         }
 
-        h1 { font-size: 3rem; margin: 0; color: var(--primary); }
-        p { font-size: 1.2rem; color: #94a3b8; max-width: 600px; padding: 0 20px; }
+        h1 { margin: 10px 0; font-size: 2.2rem; color: var(--primary); }
+        .bio { color: #94a3b8; margin-bottom: 30px; line-height: 1.6; }
 
-        .container {
-            max-width: 900px;
-            width: 90%;
-            padding-bottom: 50px;
-        }
-
-        .section-title {
-            border-right: 4px solid var(--primary);
-            padding-right: 15px;
-            margin: 40px 0 20px;
-        }
-
-        .skills {
+        .links-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-columns: 1fr;
             gap: 15px;
         }
 
-        .skill-card {
-            background: var(--card-bg);
-            padding: 15px;
-            border-radius: 10px;
-            text-align: center;
-            transition: 0.3s;
-        }
-
-        .skill-card:hover { transform: translateY(-5px); border: 1px solid var(--primary); }
-
-        .social-links {
-            margin-top: 30px;
+        .link-card {
             display: flex;
-            gap: 20px;
-        }
-
-        .social-links a {
-            color: var(--text);
-            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
             background: var(--card-bg);
-            padding: 10px 20px;
-            border-radius: 30px;
-            border: 1px solid transparent;
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
             transition: 0.3s;
+            border: 1px solid rgba(255,255,255,0.05);
         }
 
-        .social-links a:hover {
-            border-color: var(--primary);
-            background: transparent;
-            color: var(--primary);
-        }
+        .link-card i { margin-left: 10px; font-size: 1.4rem; }
+        .link-card:hover { transform: translateY(-3px); background: #2d3748; }
 
-        @media (max-width: 600px) {
-            h1 { font-size: 2rem; }
+        .whatsapp { border-right: 5px solid var(--whatsapp); }
+        .instagram { border-right: 5px solid var(--instagram); }
+        .facebook { border-right: 5px solid var(--facebook); }
+        .email { border-right: 5px solid #facc15; }
+
+        footer {
+            margin-top: auto;
+            padding: 30px;
+            font-size: 0.9rem;
+            color: #64748b;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <img src="my-photo.jpg" alt="Mustafa" class="profile-img">
-
-        <h1>مستەفا گەرمەڤی</h1>
-        <p>گەشەپێدەری وێب و ئارەزوومەندی تەکنەلۆژیا. حەز بە دروستکردنی شتی نوێ دەکەم لەسەر ئینتەرنێت.</p>
-        
-        <div class="social-links">
-            <a href="#">I'm on Instagram as @fx__protocol. Install the app to follow my photos and videos. https://www.instagram.com/fx__protocol?igsh=c3YxbWl2enR6cXUw&utm_source=ig_contact_invite</a>
-            <a href="#">https://www.facebook.com/share/1bLjfXbZFf/?mibextid=wwXIfr</a>
-            <a href="https://github.com/mustafaduski">گیتهەب</a>
-        </div>
-    </header>
-
     <div class="container">
-        <h2 class="section-title">کارامەییەکانم</h2>
-        <div class="skills">
-            <div class="skill-card">HTML / CSS</div>
-            <div class="skill-card">JavaScript</div>
-            <div class="skill-card">Git & GitHub</div>
-            <div class="skill-card">UI Design</div>
-        </div>
+        <img src="my-photo.jpg" alt="Mustafa Germavi" class="profile-img">
+        
+        <h1>مستەفا گەرمەڤی</h1>
+        <p class="bio">بەخێرهاتیت بۆ وێبسایتی فەرمی من. لێرەوە دەتوانیت لە سۆشیاڵ میدیاکان لەگەڵم بیت و پەیوەندیم پێوە بکەیت.</p>
 
-        <h2 class="section-title">دەربارەی من</h2>
-        <p>لێرەدا دەتوانیت کورتەیەک دەربارەی ژیانی خۆت، خوێندنت، یان ئەو کارانەی کە ئەنجامیان دەدەیت بنووسیت. ئەم بەشە یارمەتی خەڵک دەدات زیاتر بتناسن.</p>
+        <div class="links-grid">
+            <a href="https://www.instagram.com/m.germavi" class="link-card instagram" target="_blank">
+                <i class="fab fa-instagram"></i> فۆڵۆوم بکە لە ئینستاگرام
+            </a>
+
+            <a href="https://www.facebook.com/share/1bLjfXbZFf/" class="link-card facebook" target="_blank">
+                <i class="fab fa-facebook"></i> فەیسبووکەکەم ببینە
+            </a>
+
+            <a href="https://wa.me/9647502293413" class="link-card whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i> پەیوەندی بە واتسەپ بکە
+            </a>
+
+            <a href="mailto:mustafaduski@gmail.com" class="link-card email">
+                <i class="fas fa-envelope"></i> نامەم بۆ ئیمەیڵ بنێرە
+            </a>
+
+            <a href="https://github.com/mustafaduski" class="link-card">
+                <i class="fab fa-github"></i> پڕۆژەکانم لە گیتهەب
+            </a>
+        </div>
     </div>
 
-    <footer style="padding: 20px; color: #64748b;">
-        © 2026 هەموو مافەکان پارێزراوە بۆ مستەفا
+    <footer>
+        © 2026 دروستکراوە لەلایەن مستەفا گەرمەڤی
     </footer>
 
 </body>

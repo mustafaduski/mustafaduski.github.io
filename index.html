@@ -3,62 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>وێبسایتی من</title>
+    <title>Mustafa | پۆرتفۆلیۆ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;500;800&display=swap" rel="stylesheet">
     <style>
-        /* لێرەدا دیزاینەکە دەستکاری دەکەین */
+        :root {
+            --primary: #00d2ff;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f9;
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
             margin: 0;
+            padding: 0;
             display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            color: #333;
-        }
-        .card {
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             text-align: center;
-            max-width: 400px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid var(--primary);
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(0, 210, 255, 0.3);
+        }
+
+        h1 { font-size: 3rem; margin: 0; color: var(--primary); }
+        p { font-size: 1.2rem; color: #94a3b8; max-width: 600px; padding: 0 20px; }
+
+        .container {
+            max-width: 900px;
             width: 90%;
+            padding-bottom: 50px;
         }
-        h1 {
-            color: #4a90e2;
+
+        .section-title {
+            border-right: 4px solid var(--primary);
+            padding-right: 15px;
+            margin: 40px 0 20px;
         }
-        p {
-            line-height: 1.6;
-            font-size: 1.1rem;
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
         }
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 25px;
-            background-color: #4a90e2;
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
+
+        .skill-card {
+            background: var(--card-bg);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
             transition: 0.3s;
         }
-        .button:hover {
-            background-color: #357abd;
+
+        .skill-card:hover { transform: translateY(-5px); border: 1px solid var(--primary); }
+
+        .social-links {
+            margin-top: 30px;
+            display: flex;
+            gap: 20px;
         }
-    </style>@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;400;700&display=swap');
 
-body {
-    font-family: 'Vazirmatn', sans-serif;
-}
+        .social-links a {
+            color: var(--text);
+            text-decoration: none;
+            background: var(--card-bg);
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: 1px solid transparent;
+            transition: 0.3s;
+        }
 
+        .social-links a:hover {
+            border-color: var(--primary);
+            background: transparent;
+            color: var(--primary);
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+        }
+    </style>
 </head>
 <body>
 
-    <div class="card">
-        <h1>بەخێربێیت بۆ وێبسایتەکەم 🚀</h1>
-        <p>ئەمە یەکەم هەنگاوی منە لە فێربوونی دروستکردنی وێبسایت و بەکارهێنانی GitHub Pages.</p>
-        <a href="https://github.com" class="button">پڕۆژەکانی ترم ببینە</a>
+    <header>
+        <img src="https://via.placeholder.com/150" alt="Mustafa" class="profile-img">
+        <h1>مستەفا گەرمەڤی</h1>
+        <p>گەشەپێدەری وێب و ئارەزوومەندی تەکنەلۆژیا. حەز بە دروستکردنی شتی نوێ دەکەم لەسەر ئینتەرنێت.</p>
+        
+        <div class="social-links">
+            <a href="#">ئینستاگرام</a>
+            <a href="#">فەیسبووک</a>
+            <a href="https://github.com/mustafaduski">گیتهەب</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">کارامەییەکانم</h2>
+        <div class="skills">
+            <div class="skill-card">HTML / CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Git & GitHub</div>
+            <div class="skill-card">UI Design</div>
+        </div>
+
+        <h2 class="section-title">دەربارەی من</h2>
+        <p>لێرەدا دەتوانیت کورتەیەک دەربارەی ژیانی خۆت، خوێندنت، یان ئەو کارانەی کە ئەنجامیان دەدەیت بنووسیت. ئەم بەشە یارمەتی خەڵک دەدات زیاتر بتناسن.</p>
     </div>
+
+    <footer style="padding: 20px; color: #64748b;">
+        © 2026 هەموو مافەکان پارێزراوە بۆ مستەفا
+    </footer>
 
 </body>
 </html>
